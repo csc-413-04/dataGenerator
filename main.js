@@ -19,7 +19,7 @@ if (program.sample) {
     checkData();
 }
 
-if (program.check || true) {
+if (program.check) {
     const host = (program.check === true) ? 'localhost:1299' : program.check;
     checkHost(host);
 }
