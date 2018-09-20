@@ -1,5 +1,5 @@
 # How to run grader
-1. Install node.js
+1. Install node.js then run `npm install` from directory
 2. From directory `node main.js -g <size>`
     * defaults to 50
     * Generates new dummy data file
