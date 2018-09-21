@@ -13,15 +13,15 @@ const createRandomData = (size) => {
 
     for (let i = 0; i < size; i++) {
         data.users.push({
-            userId: i,
-            userName: `user_${i}`,
+            userid: i,
+            username: `user_${i}`,
         });
     }
 
     for (let i = 0; i < size; i++) {
         data.posts.push({
-            userId: i,
-            postId: i,
+            userid: i,
+            postid: i,
             data: 'some dummy data',
         });
     }

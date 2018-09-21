@@ -16,22 +16,22 @@ const checkData = () => {
             status: "OK",
             entries: data.users.length,
         });
-        const userId = 0;
-        console.log(`/user?userid=${userId}`);
+        const userid = 0;
+        console.log(`/user?userid=${userid}`);
         console.log({
             data: data.users,
             status: "OK",
             entries: data.users.length,
         });
-        const postId = 0;
-        console.log(`/posts?postid=${postId}`);
+        const postid = 0;
+        console.log(`/posts?postid=${postid}`);
         console.log({
             data: data.users,
             status: "OK",
             entries: data.users.length,
         });
         const maxLength = 3;
-        console.log(`/posts?postid=${postId}&maxlength=${maxLength}`);
+        console.log(`/posts?postid=${postid}&maxlength=${maxLength}`);
     });
 };
 
@@ -46,10 +46,10 @@ const checkHost = (host, verbose = true) => {
         const userMap = {};
         const postMap = {};
         data.users.forEach((user) => {
-            userMap[user.userId] = user;
+            userMap[user.userid] = user;
         });
         data.posts.forEach((post) => {
-            postMap[post.postId] = post;
+            postMap[post.postid] = post;
         });
         let score = 100;
         async.waterfall([
