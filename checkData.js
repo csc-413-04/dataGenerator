@@ -68,7 +68,7 @@ const checkHost = (host, verbose = true) => {
                 axios.get(endpoint)
                     .then((response) => {
                         console.log(`received response from endpoint: ${endpoint}`);
-                        if (JSON.stringify(answer) === JSON.parse(JSON.stringify(response.data))) {
+                        if (JSON.stringify(answer) === JSON.stringify(response.data)) {
                             console.log(`${endpoint} is correct`);
                         } else {
                             console.warn(`${endpoint} is incorrect`);
@@ -99,7 +99,7 @@ const checkHost = (host, verbose = true) => {
                     .then((response) => {
 
                         console.log(`received response from endpoint: ${endpoint}`);
-                        if (JSON.stringify(answer) === JSON.parse(JSON.stringify(response.data))) {
+                        if (JSON.stringify(answer) === JSON.stringify(response.data)) {
                             console.log(`${endpoint} is correct`);
                         } else {
                             console.warn(`${endpoint} is incorrect`);
@@ -129,7 +129,7 @@ const checkHost = (host, verbose = true) => {
                 axios.get(endpoint)
                     .then((response) => {
                         console.log(`received response from endpoint: ${endpoint}`);
-                        if (JSON.stringify(answer) === JSON.parse(JSON.stringify(response.data))) {
+                        if (JSON.stringify(answer) === JSON.stringify(response.data)) {
                             console.log(`${endpoint} is correct`);
                         } else {
                             console.warn(`${endpoint} is incorrect`);
@@ -156,7 +156,7 @@ const checkHost = (host, verbose = true) => {
                 const post = postMap[randPost];
                 const postData = (post.data.length <= maxLength) ? [post] : [];
                 const answer = {
-                    postData,
+                    data: postData,
                     status: "OK",
                     entries: postData.length,
                 };
@@ -168,7 +168,7 @@ const checkHost = (host, verbose = true) => {
                 axios.get(endpoint)
                     .then((response) => {
                         console.log(`received response from endpoint: ${endpoint}`);
-                        if (JSON.stringify(answer) === JSON.parse(JSON.stringify(response.data))) {
+                        if (JSON.stringify(answer) === JSON.stringify(response.data)) {
                             console.log(`${endpoint} is correct`);
                         } else {
                             console.warn(`${endpoint} is incorrect`);
